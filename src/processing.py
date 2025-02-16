@@ -2,7 +2,7 @@ from typing import Dict, List
 
 
 def filter_by_state(data: List[Dict[str, str]], state: str = 'EXECUTED') -> List[Dict[str, str]]:
-    """Функция фильтрующая список словарей по ключу 'state'"""
+    """Функция фильтрующая список словарей по ключам 'state'"""
     return [item for item in data if item.get('state') == state]
 
 
