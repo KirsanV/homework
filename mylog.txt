@@ -1,0 +1,6 @@
+2025-03-09 08:55:02,504 - INFO - successful_function ok
+2025-03-09 08:55:02,504 - INFO - successful_function ok
+2025-03-09 08:55:02,507 - INFO - successful_function ok
+2025-03-09 08:55:02,507 - INFO - successful_function ok
+2025-03-09 08:55:02,517 - ERROR - successful_function error: TypeError. Inputs: (1, 's'), {}
+2025-03-09 08:55:02,517 - ERROR - successful_function error: TypeError. Inputs: (1, 's'), {}
