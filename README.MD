@@ -16,10 +16,12 @@ transaction_descriptions - который принимает список сло
 возвращает описание каждой операции по очереди.
 card_number_generator - который выдает номера банковских карт в формате 
 XXXX XXXX XXXX XXXX.
+Добавлен новый модуль decorators.
+В котором реализована функция записи логов
 
 ## Тестирование
-В проект были добавлены тесты(проверки). Покрытие 100%.
-Папка tests/ test_masks.py test_processing.py test_widget.py test_generators.py
+В проект были добавлены тесты(проверки). Покрытие 99%.
+Папка tests/ test_masks.py test_processing.py test_widget.py test_generators.py test_decorators.py
 
 ## Установка
 1. Клонируйте репозиторий: git clone https://github.com/KirsanV/homework
@@ -208,3 +210,11 @@ XXXX XXXX XXXX XXXX.
         }
     }
 
+### Примеры для работы декоратора
+На примере ниже указаны записи об успешных и неуспешных выполнений функции
+2025-03-09 08:55:02,504 - INFO - successful_function ok
+2025-03-09 08:55:02,504 - INFO - successful_function ok
+2025-03-09 08:55:02,507 - INFO - successful_function ok
+2025-03-09 08:55:02,507 - INFO - successful_function ok
+2025-03-09 08:55:02,517 - ERROR - successful_function error: TypeError. Inputs: (1, 's'), {}
+2025-03-09 08:55:02,517 - ERROR - successful_function error: TypeError. Inputs: (1, 's'), {}
