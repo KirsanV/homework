@@ -6,10 +6,16 @@ from .external_api import convert_to_rub
 
 def load_transactions(filename: str) -> List[Dict[str, Any]]:
     """
-    Загрущк транзакции из указанного файла в формате JSON.
+    Загрущк транзакции из указанного файла в формате JSON
+    и ловля ошибок по чтению JSON и местоположению
     """
-    with open(filename, 'r', encoding='utf-8') as file:
-        return json.load(file)
+    try:
+        with open(filename, 'r', encoding='utf-8') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
+    except json.JSONDecodeError:
+        return []
 
 
 def main() -> None:
