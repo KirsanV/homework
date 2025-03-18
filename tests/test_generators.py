@@ -5,6 +5,8 @@ import pytest
 from src.generators import card_number_generator, filter_by_currency, transaction_descriptions
 
 # Предоставленный список транзакций
+
+
 @pytest.fixture
 def transactions() -> List[Dict]:
     return [
@@ -84,7 +86,6 @@ def transactions() -> List[Dict]:
             "to": "Счет 14211924144426031657"
         }
     ]
-
 
 
 def test_filter_by_currency(transactions) -> None:

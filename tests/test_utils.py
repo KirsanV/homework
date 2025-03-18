@@ -1,9 +1,8 @@
-import json
 import unittest
 from typing import Any, Dict, List
-from unittest.mock import mock_open, patch, MagicMock
+from unittest.mock import mock_open, patch
 
-from src.utils import load_transactions, main
+from src.utils import load_transactions
 
 
 class TestUtils(unittest.TestCase):
@@ -23,6 +22,3 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(len(transactions), 1)
         self.assertEqual(transactions[0]["id"], 1)
         self.assertIn("operationAmount", transactions[0])
-
-if __name__ == "__main__":
-    unittest.main()
