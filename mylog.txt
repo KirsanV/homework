@@ -1,6 +1,6 @@
-2025-03-17 17:46:07,965 - INFO - successful_function ok
-2025-03-17 17:46:07,965 - INFO - successful_function ok
-2025-03-17 17:46:07,966 - INFO - successful_function ok
-2025-03-17 17:46:07,966 - INFO - successful_function ok
-2025-03-17 17:46:07,974 - ERROR - successful_function error: TypeError. Inputs: (1, 's'), {}
-2025-03-17 17:46:07,974 - ERROR - successful_function error: TypeError. Inputs: (1, 's'), {}
+2025-03-18 19:22:24,242 - INFO - successful_function ok
+2025-03-18 19:22:24,242 - INFO - successful_function ok
+2025-03-18 19:22:24,247 - INFO - successful_function ok
+2025-03-18 19:22:24,247 - INFO - successful_function ok
+2025-03-18 19:22:24,258 - ERROR - successful_function error: TypeError. Inputs: (1, 's'), {}
+2025-03-18 19:22:24,258 - ERROR - successful_function error: TypeError. Inputs: (1, 's'), {}
