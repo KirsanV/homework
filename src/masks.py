@@ -11,10 +11,8 @@ masks_logger = logging.getLogger('masks')
 masks_logger.setLevel(logging.DEBUG)
 
 # Создаем обработчик для записи логов в файл
-masks_file_handler = logging.FileHandler(
-    os.path.join(log_dir, r'C:\Users\neust\PycharmProjects\homework1_by_Kirsan\logs\masks.log'), mode='w')
-masks_file_handler = logging.FileHandler(
-    os.path.join(log_dir, r'C:\Users\neust\PycharmProjects\homework1_by_Kirsan\logs\masks.log'), encoding='utf-8')
+masks_file_handler = logging.FileHandler(os.path.join(log_dir, 'masks.log'), mode='w', encoding='utf-8')
+
 masks_file_handler.setLevel(logging.DEBUG)
 
 # Создаем форматтер и добавляем его в обработчик
